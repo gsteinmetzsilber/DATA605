@@ -21,6 +21,7 @@ myani = ani.record(reset = TRUE, replay.cur = FALSE)
 x11()
 
 #shear - over x-axis (vertically fixed)
+
 t = diag(2)
 for (k in seq(-4,4, length.out = 100)) {
   t[1,2] = k
@@ -30,6 +31,7 @@ for (k in seq(-4,4, length.out = 100)) {
 }
   
 #scaling
+
 t = diag(2)
 for (k in seq(0,4, length.out = 100)) {
   t[1,1] = k 
@@ -41,7 +43,6 @@ for (k in seq(0,4, length.out = 100)) {
   }
 
 #rotation
-x11()
 
 for (k in seq(0, 2*pi, length.out = 100)) {
   
@@ -57,7 +58,7 @@ for (k in seq(0, 2*pi, length.out = 100)) {
 #goal: start in 2D, and squish to line
 #I tried what feels like everything...
 #I'm not sure why I keep getting this error: non-conformable arguments
-#The matrix is still a 2x2, I just zeroed out the final row
+#But the matrix is still a 2x2, I just zeroed out the final row
 
 for (k in seq(0, 4, length.out = 100)) {
   
